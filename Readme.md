@@ -13,6 +13,20 @@ See the [documentation](https://github.com/NBusy/NBusy.SDK/wiki)
 Install-Package NBusy
 ```
 
+## Sample Usage
+```csharp
+var user = new NBusyClient("user-access-token");
+
+var httpResponse = await user.Friends.GetFriends();
+httpResponse.Message.EnsureSuccessStatusCode();
+var friends = await httpResponse.Data;
+
+foreach (var friend in friends)
+{
+	Console.WriteLine(friend.FullName);
+}
+```
+
 ## Changelog
 See the [release notes](https://github.com/NBusy/NBusy.SDK/blob/master/ReleaseNotes.md)
 	
