@@ -23,7 +23,7 @@ namespace NBusy.Client.HttpClient
 		public NBusyHttpClient(string accessToken, HttpMessageHandler messageHandler)
 			: base(new OAuthMessageHandler(accessToken, messageHandler))
 		{
-			this.BaseAddress = new Uri("https://www.nbusy.com/Service/");
+			this.BaseAddress = new Uri("https://www.nbusy.com/API/");
 		}
 
 		public async Task<IHttpResponse> Delete(string resource, params object[] parameters)
