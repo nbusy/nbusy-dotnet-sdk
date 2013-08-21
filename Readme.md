@@ -23,7 +23,6 @@ Install-Package NBusy
 var user = new NBusyClient("user-access-token");
 
 var httpResponse = await user.Friends.GetFriends();
-httpResponse.Message.EnsureSuccessStatusCode();
 var friends = await httpResponse.Data;
 
 foreach (var friend in friends)
