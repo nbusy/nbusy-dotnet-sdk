@@ -1,5 +1,7 @@
 # NBusy
-NBusy SDK for .NET Framework 4.5. 
+NBusy SDK for .NET Framework 4.5.
+
+You can getn an overview of NBusy project here [http://www.soygul.com/projects/nbusy/](http://www.soygul.com/projects/nbusy/)
 
 ## What can it be used for?
 Although NBusy API is not publicly accessible yet, this source code can still be used as a nice reference for building [ASP.NET Web API] (http://www.asp.net/web-api) client library packages as it makes very good use of [`HttpClient`] (http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx) (`System.Net.Http`) and the new [async] (http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx) features of .NET 4.5. 
